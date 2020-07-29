@@ -1,0 +1,9 @@
+<button (click)="getProfile()">Get My Profile</button>
+<div *ngIf="user">
+  <h1>User:</h1>
+  <p>{{user.username}}</p>
+  <p>{{user.email}}</p>
+  <p>{{user.firstName}}</p>
+  <p>{{user.lastName}}</p>
+  <p>{{user.enabled}}</p>
+</div>

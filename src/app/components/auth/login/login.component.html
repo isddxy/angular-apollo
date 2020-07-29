@@ -1,0 +1,15 @@
+<h1>Sign In</h1>
+<input type="text" placeholder="login" (keyup)="onKeyLogin($event)" />
+<br/><br/>
+<input type="password" placeholder="password" (keyup)="onKeyPass($event)" />
+<br/><br/>
+<button (click)="signIn()">Войти</button>
+<hr/>
+<div *ngIf="user">
+  <h1>User:</h1>
+  <p>{{user.username}}</p>
+  <p>{{user.email}}</p>
+  <p>{{user.firstName}}</p>
+  <p>{{user.lastName}}</p>
+  <p>{{user.enabled}}</p>
+</div>

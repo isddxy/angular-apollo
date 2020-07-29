@@ -1,0 +1,2 @@
+<input #email (keyup.enter)="addEmail(email.value)" (blur)="addEmail(email.value); email.value='' " />
+<button (click)="SendInvite(email.value)">Отправить инвайт</button>
